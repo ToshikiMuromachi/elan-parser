@@ -39,7 +39,7 @@ def elan_read(file_path):
 
 if __name__ == '__main__':
     corpus_root = '/home/toshiki/data/Chiba3Party/ELAN'
-    output_file = '/home/toshiki/data/output/ELAN/'
+    output_root = '/home/toshiki/data/output/ELAN/'
     ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
 
     for f in glob.glob('{}/*.eaf'.format(corpus_root)):
