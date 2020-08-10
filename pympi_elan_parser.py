@@ -48,12 +48,12 @@ def elan_write(file_path, data):
 
 
 if __name__ == '__main__':
-    # corpus_root = '/home/toshiki/data/Chiba3Party/ELAN/'
-    # output_root = '/home/toshiki/data/output/ELAN/'
-    # ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
-    corpus_root = '/home/share/underpin/Transcript/'
-    output_root = '/home/tmuromachi/data/ELAN/'
-    ort_tier_names = ['医師', '患者']  # 話者
+    corpus_root = '/home/toshiki/data/Chiba3Party/ELAN/'
+    output_root = '/home/toshiki/data/output/ELAN/'
+    ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
+    # corpus_root = '/home/share/underpin/Transcript/'
+    # output_root = '/home/tmuromachi/data/ELAN/'
+    # ort_tier_names = ['医師', '患者']  # 話者
 
     for pathname, dirnames, filenames in os.walk(corpus_root):
         for filename in filenames:
