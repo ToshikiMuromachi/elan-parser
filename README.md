@@ -10,3 +10,7 @@ output_rootに取得した内容をcsv形式で書き込みを行う。
 **elan_parser.py**  
 標準ライブラリのElementTreeを使用して解析を行う。  
 現状ディレクトリ以下すべてのファイルの発話内容の標準出力のみ可能。  
+
+**sort.py**  
+pympi_elan_parser.pyで解析するとELAN形式通り話者ごとに出力されるため、  
+時系列順に変換したい場合に使用する。  
