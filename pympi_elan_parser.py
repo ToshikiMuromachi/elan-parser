@@ -26,12 +26,11 @@ def elan_read(file_path):
             print('namely: {}. skipping this one...'.format(ort_tier))
         else:
             for annotation in eafob.get_annotation_data_for_tier(ort_tier):
-                # 発話のみ取得
                 start_time = annotation[0]
                 end_time = annotation[1]
                 utterance = annotation[2]
 
-                elan_data.append([start_time, end_time, utterance])
+                elan_data.append([start_time, end_time, ort_tier, utterance])
     return elan_data
 
 
