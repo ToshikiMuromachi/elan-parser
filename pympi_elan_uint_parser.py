@@ -4,27 +4,19 @@ import os
 import pympi
 
 
-def elan_write(file_path, data):
-    """
-    ELANファイル解析結果をoutputディレクトリにcsvとして書き込み
-    :param file_path:解析するファイルパス
-    :param data:ELANファイル解析結果
-    :return:
-    """
-
-
 
 if __name__ == '__main__':
     # corpus_root = '/home/share/underpin/Transcript/'
     # output_root = '/home/tmuromachi/data/ELAN/'
-    # ort_tier_names = ['医師', '患者']  # 話者
+    ort_tier_names = ['医師', '患者']  # 話者
 
-    corpus_root = '/home/toshiki/data/Chiba3Party/ELAN/'
-    output_root = '/home/toshiki/data/output/ELAN/'
-    ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
+    # corpus_root = '/home/toshiki/data/Chiba3Party/ELAN/'
+    # output_root = '/home/toshiki/data/output/ELAN/'
+    # ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
 
-    input_path = '/home/toshiki/data/Chiba3Party/ELAN/chiba0132.eaf'
-    output_root = '/home/toshiki/data/output/ELAN/test/'
+    # input_path = '/home/share/underpin/Transcript-20200226/UKM014-1/Uncheck/UKM014-1_3.eaf'
+    input_path = '/home/share/underpin/RecordVoice/Nohin_1207/UKM029-2_3.eaf'
+    output_root = '/home/tmuromachi/data/ELAN/'
 
     # elanファイル初期化
     eafob = pympi.Elan.Eaf(input_path)
@@ -45,13 +37,11 @@ if __name__ == '__main__':
 
                 elan_data.append([start_time, end_time, ort_tier, utterance])
 
-    file_data = elan_data
-
     output_path = output_root + os.path.splitext(os.path.basename(input_path))[0] + '.csv'
-    with open(output_path, 'w') as file:
+    with open(output_path, 'w', encoding='utf_8') as file:
         writer = csv.writer(file)
-        writer.writerows(file_data)
+        writer.writerows(elan_data)
 
     print("--*--*--*--")
     print(input_path)
-    print(file_data)
+    print(elan_data)
