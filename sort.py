@@ -12,6 +12,8 @@ for f in glob.glob('{}/*.csv'.format(input_root)):
     print(f)
     df = pd.read_csv(f, header=None)
     df_s = df.sort_values(0)
+    df_s = df_s.reset_index(drop=True)
+    print(df_s)
 
     output_path = output_root + os.path.basename(f)
     print("->output to : " + output_path)
