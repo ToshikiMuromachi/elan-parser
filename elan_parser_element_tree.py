@@ -9,7 +9,7 @@ def read(path):
 
 
 if __name__ == '__main__':
-    root = read('/home/toshiki/data/Chiba3Party/ELAN/chiba0132.eaf')
+    root = read('/xxx/chiba0132.eaf')
     # 最上位階層のタグと中身
     print(root.tag, root.attrib)
 

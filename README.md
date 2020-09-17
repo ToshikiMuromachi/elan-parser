@@ -8,9 +8,9 @@ corpus_root以下のELANファイルを読み込み、発話開始時間・発�
 output_rootに取得した内容をcsv形式で書き込みを行う。  
 
 **pympi_elan_unit_parser.py**  
-pympi_elan_parser.pyの単独ファイル用。
+pympi_elan_parser.pyの単独ファイル解析用。
 
-**elan_parser.py**  
+**elan_parser_element_tree.py**  
 標準ライブラリのElementTreeを使用して解析を行う。  
 現状ディレクトリ以下すべてのファイルの発話内容の標準出力のみ可能。  
 

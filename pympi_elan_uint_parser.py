@@ -6,17 +6,10 @@ import pympi
 
 
 if __name__ == '__main__':
-    # corpus_root = '/home/share/underpin/Transcript/'
-    # output_root = '/home/tmuromachi/data/ELAN/'
     ort_tier_names = ['医師', '患者']  # 話者
 
-    # corpus_root = '/home/toshiki/data/Chiba3Party/ELAN/'
-    # output_root = '/home/toshiki/data/output/ELAN/'
-    # ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
-
-    # input_path = '/home/share/underpin/Transcript-20200226/UKM014-1/Uncheck/UKM014-1_3.eaf'
-    input_path = '/home/share/underpin/RecordVoice/Nohin_1207/UKM029-2_3.eaf'
-    output_root = '/home/tmuromachi/data/ELAN/'
+    input_path = '/xxx/xxx.eaf'
+    output_root = '/xxx/xxx/'
 
     # elanファイル初期化
     eafob = pympi.Elan.Eaf(input_path)
