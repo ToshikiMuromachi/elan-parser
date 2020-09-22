@@ -3,8 +3,11 @@ import glob
 import os
 import pandas as pd
 
-input_root = '/home/tmuromachi/data/ELAN/underpin/unsort/'
-output_root = '/home/tmuromachi/data/ELAN/underpin/sort/'
+input_root = '/mnt/c/data/output/unsort/'
+output_root = '/mnt/c/data/output/sort/'
+
+# input_root = '/home/tmuromachi/data/ELAN/underpin/unsort/'
+# output_root = '/home/tmuromachi/data/ELAN/underpin/sort/'
 # input_root = '/home/toshiki/data/output/ELAN/'
 # output_root = '/home/toshiki/data/output/ELAN_analysis/'
 
