@@ -48,9 +48,9 @@ def elan_write(file_path, data):
 
 
 if __name__ == '__main__':
-    corpus_root = '/mnt/c/data/corpus/Chiba3Party/ELAN/'
+    corpus_root = '/home/toshiki/data/Chiba3Party/ELAN/'
     ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
-    output_root = '/mnt/c/data/output/'
+    output_root = '/home/toshiki/data/output/aizuchi/chiba3/aizuchi-predict/unsort/'
 
     # corpus_root = '/home/share/underpin/RecordVoice/Nohin_1207/'
     # output_root = '/home/tmuromachi/data/ELAN/underpin/unsort/'
@@ -59,6 +59,8 @@ if __name__ == '__main__':
     # corpus_root = '/home/share/underpin/Transcript/'
     # corpus_root = '/home/toshiki/data/Chiba3Party/ELAN/'
     # output_root = '/home/tmuromachi/data/ELAN/'
+    # corpus_root = '/mnt/c/data/corpus/Chiba3Party/ELAN/'
+    # output_root = '/mnt/c/data/output/'
     # ort_tier_names = ['A.luu', 'B.luu', 'C.luu']  # 話者
 
     for pathname, dirnames, filenames in os.walk(corpus_root):
